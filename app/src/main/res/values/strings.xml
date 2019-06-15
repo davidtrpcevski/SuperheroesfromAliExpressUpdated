@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Superheroes from AliExpress</string>
+    <string name="onh">Online heroes</string>
+    <string name="ofh">Offline heroes</string>
+    <string name="permission_rationale">Provide permission to use feature</string>
+    <string name="search">Search</string>
+</resources>
