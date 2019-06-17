@@ -7,6 +7,7 @@ import kotlinx.android.synthetic.main.itemview_super_hero.view.*
 /**
  * Created by David Trpchevski (trpcevski.david@gmail.com) on 15 June 2019
  */
+
 class SuperHeroViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     val image = itemView.itvsh_image
     val name = itemView.itvsh_name

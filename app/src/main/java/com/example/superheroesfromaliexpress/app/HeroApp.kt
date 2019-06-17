@@ -7,16 +7,14 @@ import androidx.work.WorkManager
 import com.example.superheroesfromaliexpress.backgroundtask.BackgroundWorker
 import java.util.concurrent.TimeUnit
 
-
 /**
  * Created by David Trpchevski (trpcevski.david@gmail.com) on 15 June 2019
  */
+
 class HeroApp : Application() {
     companion object {
         private const val Notify_JOB_ID = "1331"
     }
-
-
 
     override fun onCreate() {
         super.onCreate()
@@ -26,7 +24,5 @@ class HeroApp : Application() {
         notificationCheckBuilder.addTag(Notify_JOB_ID)
         notificationCheckBuilder.setConstraints(constraints.build())
         WorkManager.getInstance(this).enqueue(notificationCheckBuilder.build())
-
-
     }
 }

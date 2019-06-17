@@ -4,9 +4,11 @@ import androidx.room.*
 import androidx.room.OnConflictStrategy.REPLACE
 import io.reactivex.Completable
 import io.reactivex.Flowable
+
 /**
  * Created by David Trpchevski (trpcevski.david@gmail.com) on 15 June 2019
  */
+
 @Dao
 interface MyHeroDAO {
 

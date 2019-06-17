@@ -17,6 +17,7 @@ import io.reactivex.schedulers.Schedulers
 /**
  * Created by David Trpchevski (trpcevski.david@gmail.com) on 15 June 2019
  */
+
 class DetailedSuperHeroVM(application: Application, private val id: Int) : AndroidViewModel(application) {
 
     private val compositeDisposable = CompositeDisposable()

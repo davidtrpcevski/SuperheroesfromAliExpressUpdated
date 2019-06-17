@@ -10,6 +10,7 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 /**
  * Created by David Trpchevski (trpcevski.david@gmail.com) on 15 June 2019
  */
+
 object DavidRetrofit {
 
     private var retrofit: Retrofit? = null

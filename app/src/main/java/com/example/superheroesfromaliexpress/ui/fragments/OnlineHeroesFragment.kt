@@ -183,7 +183,7 @@ class OnlineHeroesFragment : Fragment() {
         super.onDestroy()
     }
 
-    fun RecyclerView.smoothSnapToPosition(position: Int, snapMode: Int = LinearSmoothScroller.SNAP_TO_START) {
+    private fun RecyclerView.smoothSnapToPosition(position: Int, snapMode: Int = LinearSmoothScroller.SNAP_TO_START) {
         val smoothScroller = object: LinearSmoothScroller(this.context) {
             override fun getVerticalSnapPreference(): Int {
                 return snapMode
@@ -193,6 +193,7 @@ class OnlineHeroesFragment : Fragment() {
                 return snapMode
             }
         }
+
         smoothScroller.targetPosition = position
         layoutManager?.startSmoothScroll(smoothScroller)
     }

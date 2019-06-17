@@ -7,6 +7,7 @@ import androidx.fragment.app.FragmentStatePagerAdapter
 /**
  * Created by David Trpchevski (trpcevski.david@gmail.com) on 15 June 2019
  */
+
 class CustomViewPagerAdapter(fragmentManager: FragmentManager) : FragmentStatePagerAdapter(fragmentManager, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {
 
     private val fragmentList : ArrayList<Fragment> = ArrayList()

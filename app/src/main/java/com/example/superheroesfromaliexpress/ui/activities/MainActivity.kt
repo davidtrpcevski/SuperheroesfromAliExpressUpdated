@@ -15,6 +15,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 /**
  * Created by David Trpchevski (trpcevski.david@gmail.com) on 15 June 2019
  */
+
 class MainActivity : SuperHeroAbstractActivity() {
 
     private lateinit var toolbar: Toolbar

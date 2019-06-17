@@ -25,6 +25,7 @@ import kotlinx.android.synthetic.main.add_my_hero_dialog.*
 /**
  * Created by David Trpchevski (trpcevski.david@gmail.com) on 15 June 2019
  */
+
 class AddMyHeroDialog : SuperHeroAbstractActivity() {
     override fun disposeResources() {
     }

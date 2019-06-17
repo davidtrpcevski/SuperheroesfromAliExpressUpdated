@@ -11,6 +11,7 @@ import retrofit2.http.Path
 /**
  * Created by David Trpchevski (trpcevski.david@gmail.com) on 15 June 2019
  */
+
 interface Api {
 
 
@@ -20,19 +21,4 @@ interface Api {
     @GET(BASE_ROUTE + "id/{id}.json")
     fun getByID(@Path("id") id: Int): Single<Response<SuperHeroModel>>
 
-   /* @GET(BASE_ROUTE + "id/{id}.json")
-    fun getworkByID(@Path("id") id: Int): Single<Response<SuperHeroModel>>
-
-    @GET(BASE_ROUTE + "id/{id}.json")
-    fun getpowerstatsByID(@Path("id") id: Int): Single<Response<SuperHeroModel>>
-
-    @GET(BASE_ROUTE + "id/{id}.json")
-    fun getappearanceByID(@Path("id") id: Int): Single<Response<SuperHeroModel>>
-
-    @GET(BASE_ROUTE + "id/{id}.json")
-    fun getbiographyByID(@Path("id") id: Int): Single<Response<SuperHeroModel>>
-
-
-    @GET(BASE_ROUTE + "id/{id}.json")
-    fun getconnectionsByID(@Path("id") id: Int): Single<Response<SuperHeroModel>>*/
 }

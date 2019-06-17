@@ -30,12 +30,14 @@ import kotlinx.android.synthetic.main.activity_detailed_super_hero.*
 /**
  * Created by David Trpchevski (trpcevski.david@gmail.com) on 15 June 2019
  */
+
 class DetailedSuperHeroActivity : SuperHeroAbstractActivity() {
 
     private var detailedSuperHeroVM: DetailedSuperHeroVM? = null
     private lateinit var linearLayout: LinearLayout
     private lateinit var toolbar: Toolbar
     private lateinit var detailedImageView: AppCompatImageView
+
     override fun disposeResources() {
     }
 
@@ -72,7 +74,6 @@ class DetailedSuperHeroActivity : SuperHeroAbstractActivity() {
                 .get(DetailedSuperHeroVM::class.java)
             cancelNotification(id)
         }
-
 
         detailedSuperHeroVM?.data?.observe(this, Observer {
             it?.apply {

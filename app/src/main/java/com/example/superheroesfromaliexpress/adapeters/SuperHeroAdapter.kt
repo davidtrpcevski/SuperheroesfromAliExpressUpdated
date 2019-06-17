@@ -12,9 +12,11 @@ import com.crazylegend.kotlinextensions.views.gone
 import com.example.superheroesfromaliexpress.R
 import com.example.superheroesfromaliexpress.listeners.onClickListeners
 import com.example.superheroesfromaliexpress.model.SuperHeroModel
+
 /**
  * Created by David Trpchevski (trpcevski.david@gmail.com) on 15 June 2019
  */
+
 class SuperHeroAdapter(private val context: Context) : ListAdapter<SuperHeroModel, SuperHeroViewHolder>(SuperHeroDiffUtil()) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SuperHeroViewHolder {
         return SuperHeroViewHolder(LayoutInflater.from(context).inflate(R.layout.itemview_super_hero, parent, false))

@@ -3,6 +3,7 @@ package com.example.superheroesfromaliexpress.model
 /**
  * Created by David Trpchevski (trpcevski.david@gmail.com) on 15 June 2019
  */
+
 data class SuperHeroModel(
     val appearance: Appearance,
     val biography: Biography,

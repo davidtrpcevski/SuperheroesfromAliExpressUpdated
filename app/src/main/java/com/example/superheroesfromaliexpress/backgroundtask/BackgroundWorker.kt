@@ -7,10 +7,10 @@ import com.crazylegend.kotlinextensions.rx.singleFrom
 import io.reactivex.Single
 import kotlin.random.Random
 
-
 /**
  * Created by David Trpchevski (trpcevski.david@gmail.com) on 15 June 2019
  */
+
 class BackgroundWorker(private val appContext: Context, workerParams: WorkerParameters) : RxWorker(appContext, workerParams) {
 
     override fun createWork(): Single<Result> {

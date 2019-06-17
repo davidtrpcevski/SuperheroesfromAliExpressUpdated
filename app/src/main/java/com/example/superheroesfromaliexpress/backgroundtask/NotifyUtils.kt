@@ -14,10 +14,10 @@ import com.example.superheroesfromaliexpress.R
 import com.example.superheroesfromaliexpress.core.INTENT_TAG_DETAILED_HERO
 import com.example.superheroesfromaliexpress.ui.activities.DetailedSuperHeroActivity
 
-
 /**
  * Created by David Trpchevski (trpcevski.david@gmail.com) on 15 June 2019
  */
+
 class NotifyUtils(private val context: Context) {
 
     private var notificationCompatBuilder: NotificationCompat.Builder? = null
@@ -49,7 +49,6 @@ class NotifyUtils(private val context: Context) {
                 ?.setOnlyAlertOnce(true)
 
         notificationCompatBuilder?.build()?.let { notificationManagerCompat?.notify(id.toInt(), it) }
-
 
     }
 

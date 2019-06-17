@@ -6,8 +6,8 @@ import androidx.appcompat.app.AppCompatActivity
 /**
  * Created by David Trpchevski (trpcevski.david@gmail.com) on 15 June 2019
  */
-abstract class SuperHeroAbstractActivity : AppCompatActivity() {
 
+abstract class SuperHeroAbstractActivity : AppCompatActivity() {
 
     abstract fun disposeResources()
 

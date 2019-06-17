@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.LinearSmoothScroller
 import androidx.recyclerview.widget.RecyclerView
 import com.crazylegend.kotlinextensions.context.showConfirmationDialog
 import com.crazylegend.kotlinextensions.fragments.launch
@@ -26,8 +25,8 @@ import kotlinx.android.synthetic.main.offline_heroes_fragment.view.*
 /**
  * Created by David Trpchevski (trpcevski.david@gmail.com) on 15 June 2019
  */
-class OfflineHeroesFragment : Fragment() {
 
+class OfflineHeroesFragment : Fragment() {
 
     private lateinit var myHeroDatabaseVM: MyHeroDatabaseVM
     private lateinit var recyclerView: RecyclerView
@@ -80,20 +79,4 @@ class OfflineHeroesFragment : Fragment() {
             }
         }
     }
-
-
-    fun RecyclerView.smoothSnapToPosition(position: Int, snapMode: Int = LinearSmoothScroller.SNAP_TO_START) {
-        val smoothScroller = object: LinearSmoothScroller(this.context) {
-            override fun getVerticalSnapPreference(): Int {
-                return snapMode
-            }
-
-            override fun getHorizontalSnapPreference(): Int {
-                return snapMode
-            }
-        }
-        smoothScroller.targetPosition = position
-        layoutManager?.startSmoothScroll(smoothScroller)
-    }
-
 }
